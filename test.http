@@ -1,0 +1,28 @@
+@id = 28
+
+### Saudação
+GET http://localhost:8080/gui
+
+### Listar todos alunos
+GET http://localhost:8080/alunos
+
+### Criar um aluno
+POST http://localhost:8080/alunos
+
+{
+    "nome": "José da Silva",
+    "cpf": "12345678901",
+    "rg": "987654321"
+}
+
+### Alterar um aluno
+PATCH http://localhost:8080/alunos/{{id}}
+
+{
+    "nome": "José da Silva Jr",
+    "cpf": "1234567890A",
+    "rg": "98765432A"
+}
+
+### Excluir um Aluno
+DELETE http://localhost:8080/alunos/{{id}}
